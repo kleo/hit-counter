@@ -11,14 +11,10 @@ COOKIE_RANDOM_VALUE_LENGTH = 12
 
 # Template of SVG with {count} to be provided
 SVG_TEMPLATE = """<?xml version="1.0"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="20">
-<rect width="30" height="20" fill="#555"/>
-<rect x="30" width="{recWidth}" height="20" fill="#4c1"/>
-<rect rx="3" width="80" height="20" fill="transparent"/>
-	<g fill="#fff" text-anchor="middle"
-    font-family="DejaVu Sans,Verdana,Geneva,sans-serif" font-size="11">
-	    <text x="15" y="14">hits</text>
-	    <text x="{textX}" y="14">{count}</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="20">
+<rect rx="3" width="100" height="20" fill="transparent"/>
+	<g fill="#000" text-anchor="start" font-family="Monospace" font-size="10" font-weight="bold">
+	<text x="0" y="13">{count}</text>
 	</g>
 <!-- This count is for the url: {url} -->
 </svg>"""
